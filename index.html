@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madinet Masr — Exclusive Portfolio | properties-z.com</title>
+  
+  <!-- Meta description -->
+  <meta name="description" content="Discover the premier development portfolio of Madinet Masr: Talala, Sarai, The Butterfly, and Taj City - Origami. Down payment from 1.5% and installments up to 15 years through properties-z.com.">
+  
+  <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet (Calm Luxury Architectural Theme - Zero Gold Policy) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. HERO SECTION (EXCLUSIVE PORTFOLIO)
+       Strict rule: Starts directly at viewport top (top: 0). NO top sticky header.
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-overlay"></div>
+    
+    <div class="container hero-content">
+      
+      <!-- Top Center Official Madinet Masr Logo (Size XL) with 'By properties-z.com' -->
+      <header class="hero-brand">
+        <img src="assets/icons/madinet-masr-logo.svg" alt="Madinet Masr — By properties-z.com" class="brand-logo-xl">
+      </header>
+
+      <!-- Pre-title / Badge -->
+      <div class="badge-pill hero-badge">
+        <span>EXCLUSIVE PORTFOLIO</span>
+      </div>
+
+      <!-- Main Headline -->
+      <div class="hero-headline-wrap">
+        <h1 class="hero-main-title">A Legacy of Urban Excellence</h1>
+      </div>
+
+      <!-- Key Highlights Line (Minimalist Badges) -->
+      <div class="hero-highlights-line">
+        <div class="highlight-badge-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          <span>Down Payment Starting from 1.5%</span>
+        </div>
+
+        <div class="highlight-badge-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span>Installments Up to 15 Years</span>
+        </div>
+
+        <div class="highlight-badge-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          <span>Diverse Typologies: Luxury Apartments & Standalone Villas</span>
+        </div>
+      </div>
+
+      <!-- Lead Capture Form (Frosted Glass Container) -->
+      <div class="hero-form-container">
+        <div class="form-header">
+          <h3>REGISTER YOUR INTEREST</h3>
+          <p>Receive exclusive project details and pricing</p>
+        </div>
+
+        <form id="leadCaptureForm" novalidate>
+          
+          <!-- Full Name: Clean input, NO placeholders or sample text -->
+          <div class="form-group">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input 
+              type="text" 
+              id="fullName" 
+              name="fullName" 
+              class="form-control-input" 
+              required
+              autocomplete="name">
+          </div>
+
+          <!-- Phone Number with International Country Code Selector Dropdown (Default Egypt +20, NO sample text) -->
+          <div class="form-group">
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            
+            <div class="phone-field-wrapper">
+              
+              <!-- Hidden input for selected dial code -->
+              <input type="hidden" id="countryCodeInput" name="countryCode" value="+20">
+
+              <!-- Country Selector Trigger Button -->
+              <button 
+                type="button" 
+                id="countryCodeToggle" 
+                class="country-code-btn" 
+                aria-haspopup="true" 
+                aria-expanded="false"
+                title="Select Country Dial Code">
+                <span id="selectedFlag" class="flag-icon">🇪🇬</span>
+                <span id="selectedDialCode" class="dial-code">+20</span>
+                <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+
+              <!-- Country Selector Dropdown Popover -->
+              <div id="countryDropdown" class="country-dropdown-popover">
+                <div class="country-search-box">
+                  <input type="text" id="countrySearchInput" placeholder="Search country or code...">
+                </div>
+                <div id="countryList" class="country-list">
+                  <!-- Populated dynamically by countries.js -->
+                </div>
+              </div>
+
+              <!-- Phone Number Input (Clean input, NO sample numbers/placeholders) -->
+              <input 
+                type="tel" 
+                id="phoneNumber" 
+                name="phoneNumber" 
+                class="phone-number-input" 
+                required
+                autocomplete="tel-national">
+            </div>
+          </div>
+
+          <!-- Submit Button: Solid Charcoal with White Uppercase Text -->
+          <button type="submit" id="leadSubmitBtn" class="btn-submit-charcoal">
+            SUBMIT
+          </button>
+        </form>
+
+        <!-- Legal Disclaimer Notice (Location A - Below Form) -->
+        <p class="disclaimer-location-a">
+          By submitting, you agree to receive communications from properties-z.com regarding real estate projects. This landing page is operated by properties-z.com, an independent real estate consultancy, and is not the official website of the developer. Prices and availability are subject to change.
+        </p>
+
+        <!-- Accessibility Links (Location A - Centered Standalone Clickable Links) -->
+        <div class="legal-links-a">
+          <a href="privacy.html" class="legal-link-item">Privacy Policy</a>
+          <span style="color: var(--border-light);">|</span>
+          <a href="terms.html" class="legal-link-item">Terms & Conditions</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       2. DEDICATED PROJECT SECTIONS
+       Rule: Do NOT group into summary portfolio grid. Each project MUST have
+       its own full, dedicated section.
+       ========================================================================= -->
+
+  <!-- -------------------------------------------------------------------------
+       SECTION 1: TALALA
+       ------------------------------------------------------------------------- -->
+  <section class="project-section" id="project-talala">
+    <div class="container project-section-inner">
+      
+      <!-- Header / Badge & Subtitle -->
+      <div class="project-header-bar reveal-on-scroll">
+        <div class="badge-pill">TALALA</div>
+        <h2 class="project-title">TALALA</h2>
+        <p class="project-subtitle">Contemporary Urban Living</p>
+      </div>
+
+      <!-- Showcase Grid -->
+      <div class="project-grid-showcase">
+        
+        <!-- Visual Image Column -->
+        <div class="project-image-column reveal-on-scroll">
+          <div class="project-image-card">
+            <img src="assets/images/talala-main.jpg" alt="Talala Madinet Masr Architecture" loading="lazy">
+            <div class="image-payment-pill">
+              <span class="plan-text">5.2% Down Payment | 15 Years Installments</span>
+              <span class="plan-tag">Flexible Plan</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Specifications & Action Column -->
+        <div class="project-details-column reveal-on-scroll">
+          
+          <!-- Payment Schedule -->
+          <div class="payment-schedule-box">
+            <span class="schedule-label">Payment Schedule</span>
+            <span class="schedule-value">5.2% Down Payment | 15 Years Installments</span>
+          </div>
+
+          <!-- Pricing Overview (Strict Capital 'M' Format) -->
+          <div class="pricing-overview-module">
+            <div class="pricing-title-row">
+              <span>Exclusive Starting Rates</span>
+              <span>Available Units</span>
+            </div>
+            <div class="pricing-figures-grid">
+              <div class="price-item">
+                <span class="unit-type">Apartments</span>
+                <span class="price-amount">4.5M EGP</span>
+                <span class="starting-note">Starting from</span>
+              </div>
+              <div class="price-item">
+                <span class="unit-type">Villas</span>
+                <span class="price-amount">17.7M EGP</span>
+                <span class="starting-note">Starting from</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Highlights (Clean Responsive Grid) -->
+          <div class="highlights-grid-wrap">
+            <span class="highlights-title">Key Highlights</span>
+            <div class="highlights-cards-grid">
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span>Premium Landscaping</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                </svg>
+                <span>Exclusive Clubhouse</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                <span>Commercial Strip</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Fully Finished Options</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                  <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                  <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                </svg>
+                <span>Kids Play Area</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                </svg>
+                <span>Water Features</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons (Secondary: Visual Gallery | Primary: Solid Green WhatsApp CTA) -->
+          <div class="project-actions-row">
+            <button type="button" class="btn-visual-gallery" data-gallery-target="talala">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              <span>Visual Gallery</span>
+            </button>
+
+            <a 
+              href="https://wa.me/201033373331?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20Talala" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn-whatsapp-primary">
+              <svg viewBox="0 0 24 24">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.57 20.15 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.69 12.05 3.69C14.25 3.69 16.31 4.55 17.87 6.11C19.42 7.67 20.28 9.73 20.28 11.93C20.27 16.48 16.59 20.15 12.05 20.15ZM16.56 14.33C16.31 14.2 15.09 13.6 14.86 13.52C14.64 13.44 14.47 13.4 14.31 13.65C14.15 13.9 13.68 14.45 13.54 14.61C13.4 14.77 13.26 14.79 13.01 14.66C12.76 14.54 11.96 14.27 11.01 13.43C10.27 12.77 9.77 11.96 9.63 11.71C9.49 11.46 9.61 11.33 9.74 11.2C9.85 11.09 9.99 10.91 10.12 10.76C10.25 10.61 10.29 10.5 10.37 10.33C10.45 10.16 10.41 10.02 10.35 9.89C10.29 9.76 9.79 8.54 9.59 8.04C9.39 7.56 9.18 7.62 9.03 7.61C8.89 7.6 8.72 7.6 8.55 7.6C8.38 7.6 8.11 7.66 7.88 7.91C7.65 8.16 7 8.77 7 10.01C7 11.25 7.9 12.44 8.02 12.61C8.14 12.77 9.8 15.33 12.33 16.42C12.93 16.68 13.4 16.84 13.76 16.95C14.36 17.14 14.91 17.12 15.34 17.05C15.82 16.98 16.82 16.45 17.03 15.86C17.23 15.27 17.23 14.77 17.17 14.66C17.11 14.56 16.95 14.49 16.7 14.37L16.56 14.33Z"/>
+              </svg>
+              <span>CONTACT US</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- -------------------------------------------------------------------------
+       SECTION 2: SARAI
+       ------------------------------------------------------------------------- -->
+  <section class="project-section" id="project-sarai">
+    <div class="container project-section-inner">
+      
+      <!-- Header / Badge & Subtitle -->
+      <div class="project-header-bar reveal-on-scroll">
+        <div class="badge-pill">SARAI</div>
+        <h2 class="project-title">SARAI</h2>
+        <p class="project-subtitle">The Heart of New Cairo</p>
+      </div>
+
+      <!-- Showcase Grid -->
+      <div class="project-grid-showcase">
+        
+        <!-- Visual Image Column -->
+        <div class="project-image-column reveal-on-scroll">
+          <div class="project-image-card">
+            <img src="assets/images/sarai-main.jpg" alt="Sarai Madinet Masr Lagoon Living" loading="lazy">
+            <div class="image-payment-pill">
+              <span class="plan-text">1.5% Down Payment | 12 Years Backloaded</span>
+              <span class="plan-tag">Backloaded Plan</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Specifications & Action Column -->
+        <div class="project-details-column reveal-on-scroll">
+          
+          <!-- Payment Schedule -->
+          <div class="payment-schedule-box">
+            <span class="schedule-label">Payment Schedule</span>
+            <span class="schedule-value">1.5% Down Payment | 12 Years Backloaded Installments</span>
+          </div>
+
+          <!-- Pricing Overview (Strict Capital 'M' Format) -->
+          <div class="pricing-overview-module">
+            <div class="pricing-title-row">
+              <span>Exclusive Starting Rates</span>
+              <span>Available Units</span>
+            </div>
+            <div class="pricing-figures-grid">
+              <div class="price-item">
+                <span class="unit-type">Apartments</span>
+                <span class="price-amount">4M EGP</span>
+                <span class="starting-note">Starting from</span>
+              </div>
+              <div class="price-item">
+                <span class="unit-type">Villas</span>
+                <span class="price-amount">18.2M EGP</span>
+                <span class="starting-note">Starting from</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Highlights (Clean Responsive Grid) -->
+          <div class="highlights-grid-wrap">
+            <span class="highlights-title">Key Highlights</span>
+            <div class="highlights-cards-grid">
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <span>Lagoons & Sandy Beaches</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+                <span>Equestrian Track</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 21h18"></path>
+                  <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path>
+                </svg>
+                <span>Luxury Hotels</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
+                </svg>
+                <span>Athletic Club</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                </svg>
+                <span>Curated Retail & Dining</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Prime New Cairo Location</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons (Secondary: Visual Gallery | Primary: Solid Green WhatsApp CTA) -->
+          <div class="project-actions-row">
+            <button type="button" class="btn-visual-gallery" data-gallery-target="sarai">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              <span>Visual Gallery</span>
+            </button>
+
+            <a 
+              href="https://wa.me/201033373331?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20Sarai" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn-whatsapp-primary">
+              <svg viewBox="0 0 24 24">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.57 20.15 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.69 12.05 3.69C14.25 3.69 16.31 4.55 17.87 6.11C19.42 7.67 20.28 9.73 20.28 11.93C20.27 16.48 16.59 20.15 12.05 20.15ZM16.56 14.33C16.31 14.2 15.09 13.6 14.86 13.52C14.64 13.44 14.47 13.4 14.31 13.65C14.15 13.9 13.68 14.45 13.54 14.61C13.4 14.77 13.26 14.79 13.01 14.66C12.76 14.54 11.96 14.27 11.01 13.43C10.27 12.77 9.77 11.96 9.63 11.71C9.49 11.46 9.61 11.33 9.74 11.2C9.85 11.09 9.99 10.91 10.12 10.76C10.25 10.61 10.29 10.5 10.37 10.33C10.45 10.16 10.41 10.02 10.35 9.89C10.29 9.76 9.79 8.54 9.59 8.04C9.39 7.56 9.18 7.62 9.03 7.61C8.89 7.6 8.72 7.6 8.55 7.6C8.38 7.6 8.11 7.66 7.88 7.91C7.65 8.16 7 8.77 7 10.01C7 11.25 7.9 12.44 8.02 12.61C8.14 12.77 9.8 15.33 12.33 16.42C12.93 16.68 13.4 16.84 13.76 16.95C14.36 17.14 14.91 17.12 15.34 17.05C15.82 16.98 16.82 16.45 17.03 15.86C17.23 15.27 17.23 14.77 17.17 14.66C17.11 14.56 16.95 14.49 16.7 14.37L16.56 14.33Z"/>
+              </svg>
+              <span>CONTACT US</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- -------------------------------------------------------------------------
+       SECTION 3: THE BUTTERFLY
+       ------------------------------------------------------------------------- -->
+  <section class="project-section" id="project-the-butterfly">
+    <div class="container project-section-inner">
+      
+      <!-- Header / Badge & Subtitle -->
+      <div class="project-header-bar reveal-on-scroll">
+        <div class="badge-pill">THE BUTTERFLY</div>
+        <h2 class="project-title">THE BUTTERFLY</h2>
+        <p class="project-subtitle">Tranquility and Elegance</p>
+      </div>
+
+      <!-- Showcase Grid -->
+      <div class="project-grid-showcase">
+        
+        <!-- Visual Image Column -->
+        <div class="project-image-column reveal-on-scroll">
+          <div class="project-image-card">
+            <img src="assets/images/butterfly-main.jpg" alt="The Butterfly Madinet Masr Organic Sanctuary" loading="lazy">
+            <div class="image-payment-pill">
+              <span class="plan-text">1.5% Down Payment | Delivery: 4 Years</span>
+              <span class="plan-tag">Delivery: 4 YRS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Specifications & Action Column -->
+        <div class="project-details-column reveal-on-scroll">
+          
+          <!-- Payment & Delivery Schedule -->
+          <div class="payment-schedule-box">
+            <span class="schedule-label">Payment & Delivery Schedule</span>
+            <span class="schedule-value">1.5% Down Payment | 12 Years Backloaded Installments</span>
+            <span class="schedule-value" style="font-size: 0.95rem; color: var(--text-muted); margin-top: 2px;">Delivery: 4 Years</span>
+          </div>
+
+          <!-- Pricing Overview (Strict Capital 'M' Format) -->
+          <div class="pricing-overview-module">
+            <div class="pricing-title-row">
+              <span>Exclusive Starting Rates</span>
+              <span>Available Units</span>
+            </div>
+            <div class="pricing-figures-grid">
+              <div class="price-item">
+                <span class="unit-type">Apartments</span>
+                <span class="price-amount">4M EGP</span>
+                <span class="starting-note">Starting from</span>
+              </div>
+              <div class="price-item">
+                <span class="unit-type">Villas</span>
+                <span class="price-amount">19.7M EGP</span>
+                <span class="starting-note">Starting from</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Highlights (Clean Responsive Grid) -->
+          <div class="highlights-grid-wrap">
+            <span class="highlights-title">Key Highlights</span>
+            <div class="highlights-cards-grid">
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span>Exclusive Gated Community</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span>Central Green Spines</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+                <span>Holistic Wellness Center</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
+                </svg>
+                <span>Scenic Walking Trails</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                </svg>
+                <span>Private Lush Gardens</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                <span>Dedicated BBQ Areas</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons (Secondary: Visual Gallery | Primary: Solid Green WhatsApp CTA) -->
+          <div class="project-actions-row">
+            <button type="button" class="btn-visual-gallery" data-gallery-target="butterfly">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              <span>Visual Gallery</span>
+            </button>
+
+            <a 
+              href="https://wa.me/201033373331?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20The%20Butterfly" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn-whatsapp-primary">
+              <svg viewBox="0 0 24 24">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.57 20.15 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.69 12.05 3.69C14.25 3.69 16.31 4.55 17.87 6.11C19.42 7.67 20.28 9.73 20.28 11.93C20.27 16.48 16.59 20.15 12.05 20.15ZM16.56 14.33C16.31 14.2 15.09 13.6 14.86 13.52C14.64 13.44 14.47 13.4 14.31 13.65C14.15 13.9 13.68 14.45 13.54 14.61C13.4 14.77 13.26 14.79 13.01 14.66C12.76 14.54 11.96 14.27 11.01 13.43C10.27 12.77 9.77 11.96 9.63 11.71C9.49 11.46 9.61 11.33 9.74 11.2C9.85 11.09 9.99 10.91 10.12 10.76C10.25 10.61 10.29 10.5 10.37 10.33C10.45 10.16 10.41 10.02 10.35 9.89C10.29 9.76 9.79 8.54 9.59 8.04C9.39 7.56 9.18 7.62 9.03 7.61C8.89 7.6 8.72 7.6 8.55 7.6C8.38 7.6 8.11 7.66 7.88 7.91C7.65 8.16 7 8.77 7 10.01C7 11.25 7.9 12.44 8.02 12.61C8.14 12.77 9.8 15.33 12.33 16.42C12.93 16.68 13.4 16.84 13.76 16.95C14.36 17.14 14.91 17.12 15.34 17.05C15.82 16.98 16.82 16.45 17.03 15.86C17.23 15.27 17.23 14.77 17.17 14.66C17.11 14.56 16.95 14.49 16.7 14.37L16.56 14.33Z"/>
+              </svg>
+              <span>CONTACT US</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- -------------------------------------------------------------------------
+       SECTION 4: TAJ CITY – ORIGAMI
+       ------------------------------------------------------------------------- -->
+  <section class="project-section" id="project-taj-city-origami">
+    <div class="container project-section-inner">
+      
+      <!-- Header / Badge & Subtitle -->
+      <div class="project-header-bar reveal-on-scroll">
+        <div class="badge-pill">TAJ CITY – ORIGAMI</div>
+        <h2 class="project-title">TAJ CITY – ORIGAMI</h2>
+        <p class="project-subtitle">Masterfully Crafted Homes</p>
+      </div>
+
+      <!-- Showcase Grid -->
+      <div class="project-grid-showcase">
+        
+        <!-- Visual Image Column -->
+        <div class="project-image-column reveal-on-scroll">
+          <div class="project-image-card">
+            <img src="assets/images/origami-main.jpg" alt="Taj City Origami Minimalist Japanese Architecture" loading="lazy">
+            <div class="image-payment-pill">
+              <span class="plan-text">5% Down Payment | 10 Years Installments</span>
+              <span class="plan-tag">10 YRS Plan</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Specifications & Action Column -->
+        <div class="project-details-column reveal-on-scroll">
+          
+          <!-- Payment Schedule -->
+          <div class="payment-schedule-box">
+            <span class="schedule-label">Payment Schedule</span>
+            <span class="schedule-value">5% Down Payment | 10 Years Installments</span>
+          </div>
+
+          <!-- Pricing Overview (Strict Capital 'M' Format) -->
+          <div class="pricing-overview-module">
+            <div class="pricing-title-row">
+              <span>Exclusive Starting Rates</span>
+              <span>Available Units</span>
+            </div>
+            <div class="pricing-figures-grid">
+              <div class="price-item">
+                <span class="unit-type">Apartments</span>
+                <span class="price-amount">10.4M EGP</span>
+                <span class="starting-note">Starting from</span>
+              </div>
+              <div class="price-item">
+                <span class="unit-type">Villas</span>
+                <span class="price-amount">21M EGP</span>
+                <span class="starting-note">Starting from</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Highlights (Clean Responsive Grid) -->
+          <div class="highlights-grid-wrap">
+            <span class="highlights-title">Key Highlights</span>
+            <div class="highlights-cards-grid">
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                </svg>
+                <span>Minimalist Japanese-Inspired Architecture</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span>Expansive Central Park</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                <span>International Schools</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <span>Vibrant Business District</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+                <span>Medical Facilities</span>
+              </div>
+              <div class="highlight-spec-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+                <span>Integrated Sports Club</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons (Secondary: Visual Gallery | Primary: Solid Green WhatsApp CTA) -->
+          <div class="project-actions-row">
+            <button type="button" class="btn-visual-gallery" data-gallery-target="origami">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              <span>Visual Gallery</span>
+            </button>
+
+            <a 
+              href="https://wa.me/201033373331?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20Taj%20City%20Origami" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn-whatsapp-primary">
+              <svg viewBox="0 0 24 24">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.57 20.15 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.69 12.05 3.69C14.25 3.69 16.31 4.55 17.87 6.11C19.42 7.67 20.28 9.73 20.28 11.93C20.27 16.48 16.59 20.15 12.05 20.15ZM16.56 14.33C16.31 14.2 15.09 13.6 14.86 13.52C14.64 13.44 14.47 13.4 14.31 13.65C14.15 13.9 13.68 14.45 13.54 14.61C13.4 14.77 13.26 14.79 13.01 14.66C12.76 14.54 11.96 14.27 11.01 13.43C10.27 12.77 9.77 11.96 9.63 11.71C9.49 11.46 9.61 11.33 9.74 11.2C9.85 11.09 9.99 10.91 10.12 10.76C10.25 10.61 10.29 10.5 10.37 10.33C10.45 10.16 10.41 10.02 10.35 9.89C10.29 9.76 9.79 8.54 9.59 8.04C9.39 7.56 9.18 7.62 9.03 7.61C8.89 7.6 8.72 7.6 8.55 7.6C8.38 7.6 8.11 7.66 7.88 7.91C7.65 8.16 7 8.77 7 10.01C7 11.25 7.9 12.44 8.02 12.61C8.14 12.77 9.8 15.33 12.33 16.42C12.93 16.68 13.4 16.84 13.76 16.95C14.36 17.14 14.91 17.12 15.34 17.05C15.82 16.98 16.82 16.45 17.03 15.86C17.23 15.27 17.23 14.77 17.17 14.66C17.11 14.56 16.95 14.49 16.7 14.37L16.56 14.33Z"/>
+              </svg>
+              <span>CONTACT US</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       3. YOUR STRATEGIC PARTNER SECTION
+       ========================================================================= -->
+  <section class="partner-section" id="why-choose-us">
+    <div class="container">
+      
+      <div class="partner-header reveal-on-scroll">
+        <div class="badge-pill">WHY CHOOSE US</div>
+        <h2 class="partner-headline">Why Madinet Masr through properties-z.com?</h2>
+      </div>
+
+      <!-- Value Cards (Minimalist Editorial Modules) -->
+      <div class="partner-modules-grid">
+        
+        <div class="partner-module-card reveal-on-scroll">
+          <div class="module-number">01</div>
+          <h3 class="module-title">100% Unbiased Consultation</h3>
+          <p class="module-description">
+            We provide 100% unbiased consultations to ensure Madinet Masr is the absolute best match for your investment goals compared to the entire market.
+          </p>
+        </div>
+
+        <div class="partner-module-card reveal-on-scroll">
+          <div class="module-number">02</div>
+          <h3 class="module-title">Expert Step-by-Step Guidance</h3>
+          <p class="module-description">
+            Our experts guide you step-by-step to secure prime units and tailor payment plans that perfectly fit your budget.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Strategic Partner CTA Button: Solid Green WhatsApp button -->
+      <div class="partner-cta-container reveal-on-scroll">
+        <a 
+          href="https://wa.me/201033373331?text=Hello%2C%20I%20would%20like%20to%20talk%20to%20an%20expert%20about%20Madinet%20Masr%20projects" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn-whatsapp-expert">
+          <svg viewBox="0 0 24 24">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.57 20.15 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.69 12.05 3.69C14.25 3.69 16.31 4.55 17.87 6.11C19.42 7.67 20.28 9.73 20.28 11.93C20.27 16.48 16.59 20.15 12.05 20.15ZM16.56 14.33C16.31 14.2 15.09 13.6 14.86 13.52C14.64 13.44 14.47 13.4 14.31 13.65C14.15 13.9 13.68 14.45 13.54 14.61C13.4 14.77 13.26 14.79 13.01 14.66C12.76 14.54 11.96 14.27 11.01 13.43C10.27 12.77 9.77 11.96 9.63 11.71C9.49 11.46 9.61 11.33 9.74 11.2C9.85 11.09 9.99 10.91 10.12 10.76C10.25 10.61 10.29 10.5 10.37 10.33C10.45 10.16 10.41 10.02 10.35 9.89C10.29 9.76 9.79 8.54 9.59 8.04C9.39 7.56 9.18 7.62 9.03 7.61C8.89 7.6 8.72 7.6 8.55 7.6C8.38 7.6 8.11 7.66 7.88 7.91C7.65 8.16 7 8.77 7 10.01C7 11.25 7.9 12.44 8.02 12.61C8.14 12.77 9.8 15.33 12.33 16.42C12.93 16.68 13.4 16.84 13.76 16.95C14.36 17.14 14.91 17.12 15.34 17.05C15.82 16.98 16.82 16.45 17.03 15.86C17.23 15.27 17.23 14.77 17.17 14.66C17.11 14.56 16.95 14.49 16.7 14.37L16.56 14.33Z"/>
+          </svg>
+          <span>Talk to an Expert</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       4. TECHNICAL FOOTER & COMPLIANCE
+       ========================================================================= -->
+  <footer class="footer-compliance">
+    <div class="container footer-inner">
+      
+      <!-- Centered Madinet Masr Logo (Size XL) with 'By properties-z.com' sub-branding -->
+      <div class="footer-brand">
+        <img src="assets/icons/madinet-masr-logo.svg" alt="Madinet Masr — By properties-z.com" class="brand-logo-xl">
+      </div>
+
+      <!-- Disclaimer (Location B) -->
+      <p class="disclaimer-location-b">
+        By submitting, you agree to receive communications from properties-z.com regarding real estate projects. This landing page is operated by properties-z.com, an independent real estate consultancy, and is not the official website of the developer. Prices and availability are subject to change.
+      </p>
+
+      <!-- Legal Links (Location B - Centered at absolute bottom) -->
+      <div class="legal-links-b">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+
+      <!-- Signature -->
+      <div class="footer-signature">
+        © 2026 properties-z.com — Strategic Partners
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- =========================================================================
+       FLOATING WHATSAPP BUTTON (Round Green Icon-Only Button #25D366)
+       Linking directly to +201033373331 (no text labels)
+       ========================================================================= -->
+  <a 
+    href="https://wa.me/201033373331?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20Madinet%20Masr%20Exclusive%20Portfolio" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="floating-whatsapp-btn" 
+    aria-label="Direct WhatsApp Inquiry">
+    <svg viewBox="0 0 24 24">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.57 20.15 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.69 12.05 3.69C14.25 3.69 16.31 4.55 17.87 6.11C19.42 7.67 20.28 9.73 20.28 11.93C20.27 16.48 16.59 20.15 12.05 20.15ZM16.56 14.33C16.31 14.2 15.09 13.6 14.86 13.52C14.64 13.44 14.47 13.4 14.31 13.65C14.15 13.9 13.68 14.45 13.54 14.61C13.4 14.77 13.26 14.79 13.01 14.66C12.76 14.54 11.96 14.27 11.01 13.43C10.27 12.77 9.77 11.96 9.63 11.71C9.49 11.46 9.61 11.33 9.74 11.2C9.85 11.09 9.99 10.91 10.12 10.76C10.25 10.61 10.29 10.5 10.37 10.33C10.45 10.16 10.41 10.02 10.35 9.89C10.29 9.76 9.79 8.54 9.59 8.04C9.39 7.56 9.18 7.62 9.03 7.61C8.89 7.6 8.72 7.6 8.55 7.6C8.38 7.6 8.11 7.66 7.88 7.91C7.65 8.16 7 8.77 7 10.01C7 11.25 7.9 12.44 8.02 12.61C8.14 12.77 9.8 15.33 12.33 16.42C12.93 16.68 13.4 16.84 13.76 16.95C14.36 17.14 14.91 17.12 15.34 17.05C15.82 16.98 16.82 16.45 17.03 15.86C17.23 15.27 17.23 14.77 17.17 14.66C17.11 14.56 16.95 14.49 16.7 14.37L16.56 14.33Z"/>
+    </svg>
+  </a>
+
+
+  <!-- =========================================================================
+       VISUAL GALLERY LIGHTBOX MODAL
+       ========================================================================= -->
+  <div id="galleryModal" class="gallery-modal-overlay" role="dialog" aria-modal="true">
+    <div class="gallery-modal-container">
+      
+      <!-- Modal Header -->
+      <div class="gallery-modal-header">
+        <div class="gallery-header-info">
+          <h4 id="galleryTitle">Project Gallery</h4>
+          <span id="galleryCounter" class="gallery-counter-badge">1 / 4</span>
+        </div>
+        <button type="button" id="galleryClose" class="gallery-close-btn" aria-label="Close Gallery">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Main Viewer -->
+      <div class="gallery-viewer">
+        <button type="button" id="galleryPrev" class="gallery-nav-arrow prev" aria-label="Previous Photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        
+        <img id="galleryImage" src="" alt="Project Photo">
+        
+        <button type="button" id="galleryNext" class="gallery-nav-arrow next" aria-label="Next Photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="gallery-modal-footer">
+        <p id="galleryCaption" class="gallery-caption-text"></p>
+        <div id="galleryThumbnails" class="gallery-thumbnails-strip"></div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- =========================================================================
+       SUCCESS CONFIRMATION MODAL
+       ========================================================================= -->
+  <div id="successModal" class="success-modal-overlay" role="dialog" aria-modal="true">
+    <div class="success-modal-box">
+      <div class="success-check-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h3>Interest Registered</h3>
+      <p>
+        Thank you, <strong id="successNameDisplay">Valued Client</strong>. Your registration for Madinet Masr's exclusive portfolio has been successfully processed. Our strategic real estate advisor will connect with you promptly.
+      </p>
+      <div class="success-modal-actions">
+        <a id="successWhatsAppBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn-success-wa">
+          <svg viewBox="0 0 24 24">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.57 20.15 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.69 12.05 3.69C14.25 3.69 16.31 4.55 17.87 6.11C19.42 7.67 20.28 9.73 20.28 11.93C20.27 16.48 16.59 20.15 12.05 20.15ZM16.56 14.33C16.31 14.2 15.09 13.6 14.86 13.52C14.64 13.44 14.47 13.4 14.31 13.65C14.15 13.9 13.68 14.45 13.54 14.61C13.4 14.77 13.26 14.79 13.01 14.66C12.76 14.54 11.96 14.27 11.01 13.43C10.27 12.77 9.77 11.96 9.63 11.71C9.49 11.46 9.61 11.33 9.74 11.2C9.85 11.09 9.99 10.91 10.12 10.76C10.25 10.61 10.29 10.5 10.37 10.33C10.45 10.16 10.41 10.02 10.35 9.89C10.29 9.76 9.79 8.54 9.59 8.04C9.39 7.56 9.18 7.62 9.03 7.61C8.89 7.6 8.72 7.6 8.55 7.6C8.38 7.6 8.11 7.66 7.88 7.91C7.65 8.16 7 8.77 7 10.01C7 11.25 7.9 12.44 8.02 12.61C8.14 12.77 9.8 15.33 12.33 16.42C12.93 16.68 13.4 16.84 13.76 16.95C14.36 17.14 14.91 17.12 15.34 17.05C15.82 16.98 16.82 16.45 17.03 15.86C17.23 15.27 17.23 14.77 17.17 14.66C17.11 14.56 16.95 14.49 16.7 14.37L16.56 14.33Z"/>
+          </svg>
+          <span>Connect via WhatsApp</span>
+        </a>
+        <button type="button" id="successModalClose" class="btn-success-close">Done</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="js/countries.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

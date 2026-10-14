@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 140" width="480" height="140" fill="none">
+  <!-- Geometric Architectural Emblem (Modern M & Monoliths) -->
+  <g transform="translate(18, 12)">
+    <!-- Architectural Facets / Monumental Forms -->
+    <path d="M0 80 L0 10 L22 0 L22 70 Z" fill="#1A202C" />
+    <path d="M22 0 L44 10 L44 70 L22 60 Z" fill="#2D3748" opacity="0.9" />
+    <path d="M44 10 L66 0 L66 80 L44 70 Z" fill="#1A202C" />
+    <path d="M22 25 L44 35 L44 75 L22 65 Z" fill="#4A5568" opacity="0.4" />
+    <!-- Center Cornerstone Dot -->
+    <rect x="29" y="80" width="8" height="8" fill="#1A202C" />
+  </g>
+
+  <!-- Typography: MADINET MASR -->
+  <text x="105" y="52" font-family="'Cinzel', 'Playfair Display', 'Times New Roman', serif" font-size="34" font-weight="700" letter-spacing="4" fill="#1A202C">
+    MADINET MASR
+  </text>
+
+  <!-- Bilingual Arabic Sub-line & Heritage -->
+  <text x="107" y="78" font-family="'Cairo', 'Segoe UI', Tahoma, sans-serif" font-size="14" font-weight="600" letter-spacing="3" fill="#4A5568">
+    مـديـنـة مـصـر • EST. 1959
+  </text>
+
+  <!-- Elegant 1px Divider -->
+  <line x1="105" y1="92" x2="460" y2="92" stroke="#CBD5E1" stroke-width="1" />
+
+  <!-- Global Sub-Branding: By properties-z.com -->
+  <text x="105" y="112" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="5" fill="#2D3748">
+    BY PROPERTIES-Z.COM
+  </text>
+</svg>
