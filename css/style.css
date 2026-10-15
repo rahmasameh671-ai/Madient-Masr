@@ -354,20 +354,28 @@ a {
   box-shadow: 0 0 0 3px rgba(26, 32, 44, 0.08);
 }
 
-/* Phone Field with Country Code Selector */
+/* Phone Field with Country Code Selector (Split Flex-Container) */
 .phone-field-wrapper {
-  display: flex;
-  gap: 8px;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch !important;
+  gap: 10px;
   position: relative;
+  width: 100%;
 }
 
 .country-code-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
   height: 52px;
-  padding: 0 14px;
+  width: 104px !important;
+  min-width: 104px !important;
+  max-width: 104px !important;
+  flex: 0 0 104px !important;
+  flex-shrink: 0 !important;
+  padding: 0 8px;
   background: #FFFFFF;
   border: 1px solid var(--border-light);
   border-radius: var(--radius-sm);
@@ -378,7 +386,6 @@ a {
   cursor: pointer;
   white-space: nowrap;
   transition: var(--transition-fast);
-  flex-shrink: 0;
 }
 
 .country-code-btn:hover {
@@ -391,6 +398,7 @@ a {
   height: 12px;
   stroke: var(--text-muted);
   transition: transform 0.2s ease;
+  flex-shrink: 0;
 }
 
 .country-dropdown-popover {
@@ -475,9 +483,11 @@ a {
 }
 
 .phone-number-input {
-  flex: 1;
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  width: 100% !important;
   height: 52px;
-  padding: 0 18px;
+  padding: 0 16px;
   font-size: 1rem;
   font-family: var(--font-sans);
   color: var(--text-primary);
@@ -864,44 +874,11 @@ a {
   flex-shrink: 0;
 }
 
-/* Action Buttons (Dual Controls: Gallery + WhatsApp) */
+/* Project Action CTA (Solid Green WhatsApp Button) */
 .project-actions-row {
   display: flex;
-  gap: 14px;
-  align-items: center;
-  margin-top: 10px;
-}
-
-/* Secondary Button: Visual Gallery */
-.btn-visual-gallery {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 15px 26px;
-  background: #FFFFFF;
-  color: var(--text-primary);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-sm);
-  font-family: var(--font-sans);
-  font-size: 0.88rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: var(--transition-smooth);
-}
-
-.btn-visual-gallery:hover {
-  border-color: var(--text-primary);
-  background: var(--bg-platinum);
-  transform: translateY(-2px);
-}
-
-.btn-visual-gallery svg {
-  width: 18px;
-  height: 18px;
-  stroke: currentColor;
+  width: 100%;
+  margin-top: 12px;
 }
 
 /* Primary Button: Solid Green WhatsApp button (#25D366) reading 'CONTACT US' */
@@ -909,22 +886,23 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
+  width: 100%;
+  height: 54px;
   padding: 15px 32px;
   background-color: var(--whatsapp-green);
   color: #FFFFFF;
   border: none;
   border-radius: var(--radius-sm);
   font-family: var(--font-sans);
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   font-weight: 700;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   cursor: pointer;
   transition: var(--transition-smooth);
   box-shadow: 0 8px 22px var(--whatsapp-green-shadow);
   text-decoration: none;
-  flex: 1;
 }
 
 .btn-whatsapp-primary:hover {
@@ -935,8 +913,8 @@ a {
 }
 
 .btn-whatsapp-primary svg {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   fill: currentColor;
 }
 
@@ -1573,7 +1551,6 @@ a {
     width: 100%;
   }
 
-  .btn-visual-gallery,
   .btn-whatsapp-primary {
     width: 100%;
   }
@@ -1605,17 +1582,8 @@ a {
     gap: 14px;
   }
 
-  .phone-field-wrapper {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .country-code-btn {
-    width: 100%;
-    justify-content: space-between;
-  }
-
   .country-dropdown-popover {
-    width: 100%;
+    width: 290px;
+    max-width: calc(100vw - 48px);
   }
 }

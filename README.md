@@ -15,8 +15,7 @@ An ultra-luxurious, modern, mobile-responsive real estate landing page showcasin
 - **Zero Gold Policy**: Strictly adheres to the serene **Calm Luxury** palette (pure whites, alabasters, platinum greys `#F8F9FA` / `#F1F3F5`, deep charcoals `#1A202C` / `#2D3748`, frosted glass `rgba(255,255,255,0.92)`). Absolutely no gold, bronze, brass, or yellow.
 - **Top: 0 Viewport Start**: No sticky or fixed header strip. The Hero section starts directly at `top: 0`.
 - **Global Sub-Branding**: Features `BY PROPERTIES-Z.COM` prominently beneath official logos in both Hero and Footer sections.
-- **Strict Capital 'M' Price Formatting**: Rendered strictly using clean `M` formatting (e.g., `4M EGP`, `4.5M EGP`, `10.4M EGP`, `17.7M EGP`, `18.2M EGP`, `19.7M EGP`, `21M EGP`).
-- **Interactive Visual Gallery Lightbox**: Full-screen modal gallery for each development with captions, keyboard navigation, and thumbnail previews.
+- **Dedicated WhatsApp CTAs**: High-conversion solid green WhatsApp action button for each development with prefilled inquiry parameters.
 - **100% Mobile-First Responsive Design**: Single-column collapse with thumb-friendly controls (50px+ hit areas).
 
 ---
