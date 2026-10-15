@@ -8,10 +8,10 @@ An ultra-luxurious, modern, mobile-responsive real estate landing page showcasin
 ## 🏛️ Architectural Layout & Navigation Features
 
 - **Dedicated Individual Project Sections**:
-  - **Talala**: Contemporary Urban Living (5.2% Down Payment | 15 Years Installments | Starting from 4.5M EGP)
-  - **Sarai**: The Heart of New Cairo (1.5% Down Payment | 12 Years Backloaded | Starting from 4M EGP)
-  - **The Butterfly**: Tranquility and Elegance (1.5% Down Payment | 12 Years Backloaded | Delivery: 4 Years | Starting from 4M EGP)
-  - **Taj City – Origami**: Masterfully Crafted Homes (5% Down Payment | 10 Years Installments | Starting from 10.4M EGP)
+  - **Talala**: Contemporary Urban Living (5% Down Payment | 12 Years Installments | Starting from 8.4M EGP)
+  - **Sarai**: The Heart of New Cairo (1.5% Down Payment | 12 Years Installments | Starting from 5M EGP)
+  - **The Butterfly**: Tranquility and Elegance (1.5% Down Payment | 12 Years Installments | Starting from 6.3M EGP)
+  - **Taj City – Etaje**: Masterfully Crafted Homes (3% Down Payment | 10 Years Installments | Starting from 6M EGP)
 - **Zero Gold Policy**: Strictly adheres to the serene **Calm Luxury** palette (pure whites, alabasters, platinum greys `#F8F9FA` / `#F1F3F5`, deep charcoals `#1A202C` / `#2D3748`, frosted glass `rgba(255,255,255,0.92)`). Absolutely no gold, bronze, brass, or yellow.
 - **Top: 0 Viewport Start**: No sticky or fixed header strip. The Hero section starts directly at `top: 0`.
 - **Global Sub-Branding**: Features `BY PROPERTIES-Z.COM` prominently beneath official logos in both Hero and Footer sections.

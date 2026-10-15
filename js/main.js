@@ -134,6 +134,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const galleryData = {
     talala: [
       {
+        src: 'assets/images/talala-official.png',
+        title: 'TALALA — Official Signature Villa Design',
+        caption: 'European-infused elegance with iconic arched architectural facades and private landscaped gardens'
+      },
+      {
         src: 'assets/images/talala-main.jpg',
         title: 'TALALA — Contemporary Architectural Landmark',
         caption: 'European-infused design with panoramic glass facades and expansive private lawns'
@@ -155,6 +160,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     ],
     sarai: [
+      {
+        src: 'assets/images/sarai-official.webp',
+        title: 'SARAI — Official Crystal Lagoon & Waterfront Promenade',
+        caption: 'Expansive swimmable lagoons and lakeside residential architecture in New Cairo'
+      },
       {
         src: 'assets/images/sarai-main.jpg',
         title: 'SARAI — Waterfront Lagoon Sanctuary',
@@ -178,6 +188,11 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
     butterfly: [
       {
+        src: 'assets/images/butterfly-official.webp',
+        title: 'THE BUTTERFLY — Official Townhouse & Garden Enclave',
+        caption: 'Low-density sanctuary designed with central green spines and peaceful private gardens'
+      },
+      {
         src: 'assets/images/butterfly-main.jpg',
         title: 'THE BUTTERFLY — Sculptural Haven in Mostakbal City',
         caption: 'Architectural symmetry inspired by butterfly wings, harmonized with nature'
@@ -198,29 +213,37 @@ document.addEventListener('DOMContentLoaded', () => {
         caption: 'Dedicated spa, fitness facilities, and peaceful shaded meditation enclaves'
       }
     ],
-    origami: [
+    etaje: [
+      {
+        src: 'assets/images/etaje-main.jpg',
+        title: 'TAJ CITY – ETAJE — Park Residence Architecture',
+        caption: 'Monolithic stone and glass design with lush rooftop terraces and private perimeter walls'
+      },
       {
         src: 'assets/images/origami-main.jpg',
-        title: 'TAJ CITY – ORIGAMI — Minimalist Japanese Architecture',
+        title: 'TAJ CITY – ETAJE — Minimalist Precision',
         caption: 'Geometric precision and clean lines redefining luxury living in New Cairo'
       },
       {
         src: 'assets/images/origami-1.jpg',
-        title: 'TAJ CITY – ORIGAMI — Zen Gardens & Water Mirrors',
-        caption: 'Tranquil Japanese-inspired landscaping creating effortless mindfulness'
+        title: 'TAJ CITY – ETAJE — Zen Gardens & Water Mirrors',
+        caption: 'Tranquil landscaping creating effortless mindfulness and open views'
       },
       {
         src: 'assets/images/origami-2.jpg',
-        title: 'TAJ CITY – ORIGAMI — Masterfully Crafted Facades',
+        title: 'TAJ CITY – ETAJE — Masterfully Crafted Facades',
         caption: 'Contemporary monolithic stone and glass design overlooking the central park'
       },
       {
         src: 'assets/images/origami-3.jpg',
-        title: 'TAJ CITY – ORIGAMI — Modern Architectural Interiors',
+        title: 'TAJ CITY – ETAJE — Modern Architectural Interiors',
         caption: 'Floor-to-ceiling vistas connecting pure interior minimalism with organic nature'
       }
     ]
   };
+
+  // Backwards compatibility alias
+  galleryData.origami = galleryData.etaje;
 
   const galleryModal = document.getElementById('galleryModal');
   const galleryImage = document.getElementById('galleryImage');
