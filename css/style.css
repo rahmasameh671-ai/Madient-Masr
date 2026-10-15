@@ -604,6 +604,47 @@ a {
   letter-spacing: 0.04em;
 }
 
+/* Official Project Brand Logos in Section Headers */
+.project-brand-logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px auto 12px;
+}
+
+.project-brand-logo {
+  height: 58px;
+  max-height: 68px;
+  width: auto;
+  max-width: 280px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.04));
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-brand-logo:hover {
+  transform: translateY(-2px) scale(1.03);
+}
+
+.project-brand-logo.logo-sarai {
+  height: 84px;
+  max-height: 92px;
+}
+
+.project-brand-logo.logo-taj {
+  height: 78px;
+  max-height: 86px;
+}
+
+.project-brand-logo.logo-talala {
+  height: 64px;
+}
+
+.project-brand-logo.logo-butterfly {
+  height: 62px;
+}
+
 /* Two-Column Showcase Layout */
 .project-grid-showcase {
   display: grid;
